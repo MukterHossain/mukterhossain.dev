@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import loaderStyle from './hero.module.css'
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -95,6 +96,10 @@ const Hero = () => {
               >
                 Get In Touch
               </Link>
+            </div>
+            {/* Round shape */}
+            <div className={loaderStyle.loader}>
+
             </div>
 
             {/* Stats */}
